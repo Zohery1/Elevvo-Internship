@@ -7,10 +7,19 @@ This repository tracks my solutions for the Elevvo Python Programming & AI inter
 ```text
 Elevvo-Internship/
 ├── File Organizer/
+│   ├── files.py
+│   ├── test_organizer.py
 │   └── README.md
 ├── Inventory Management/
+│   ├── inventory.py
+│   ├── test_inventory.py
 │   └── README.md
 └── SMS Spam Classification/
+    ├── pipeline.py
+    ├── sms_spam_classification.ipynb
+    ├── spam_classifier.joblib
+    ├── sms-spam-collection.csv
+    ├── test_pipeline.py
     └── README.md
 ```
 

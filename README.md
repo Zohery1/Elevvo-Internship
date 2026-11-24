@@ -1,35 +1,26 @@
-# Elevvo Internship Projects
+# Elevvo Internship - Level 2 Tasks
 
-This repository contains projects developed during the Elevvo Internship program.
+This repository tracks my solutions for the Elevvo Python Programming & AI internship (Level 2). It covers the three required tasks: file automation, object-oriented design, and an end-to-end NLP classification pipeline.
 
-## 📁 Repository Structure
+## Repository layout
 
 ```text
 Elevvo-Internship/
-├── File Organizer/              # Automated script/tool to organize files by category/extension
-├── Inventory Management/        # Inventory and stock tracking system
-└── SMS Spam Classification/     # Machine Learning / NLP model for SMS spam detection
+├── File Organizer/
+│   └── README.md
+├── Inventory Management/
+│   └── README.md
+└── SMS Spam Classification/
+    └── README.md
 ```
 
-## 🚀 Projects Overview
+## Tasks overview
 
-### 1. File Organizer
-A utility designed to organize directory clutter by sorting files into relevant folders based on extensions, categories, or creation dates.
+### Task 1: Automated File Organizer
+A script that sorts files in a chosen directory into subfolders by extension. It includes conflict resolution to avoid overwriting existing files, reports every move in the console, and includes error handling for permission issues and empty directories.
 
-### 2. Inventory Management
-A management application to track inventory items, stock levels, transactions, and product details.
+### Task 2: Object-Oriented Inventory Management System
+An inventory tracker built with Python classes. It uses a base `Product` class with validation properties to block negative stock, plus an expiring product subclass that tracks shelf life. Includes stock adjustments, low-inventory alerts, and formatted inventory reports.
 
-### 3. SMS Spam Classification
-An NLP & Machine Learning classification project to distinguish spam messages from legitimate (ham) messages.
-
----
-
-## 💻 Setup & Git Workflow
-
-```bash
-# Clone the repository
-git clone https://github.com/Zohery1/Elevvo-Internship.git
-
-# Navigate into the project folder
-cd Elevvo-Internship
-```
+### Task 3: SMS Spam Classification Pipeline
+A text classification pipeline that separates spam messages from legitimate texts (ham). It uses TF-IDF and Logistic Regression trained on the SMS Spam Collection dataset, evaluates performance against class imbalance using precision, recall, and confusion matrices, and exports the final model with `joblib`.

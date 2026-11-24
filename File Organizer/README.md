@@ -11,7 +11,7 @@ A Python script that scans an unorganized directory and sorts files into subdire
 
 ## Tech stack
 
-- Python 3
+- Python 
 - Standard library modules: `pathlib`, `shutil`, `os`
 
 ## Usage

@@ -12,6 +12,17 @@ A Python script that sorts loose files in a directory into subfolders based on t
 - Includes a `--dry-run` flag to preview moves before changing anything on disk.
 - Built using only Python standard library modules (`os`, `shutil`, `pathlib`, `sys`).
 
+## Architecture
+
+```mermaid
+flowchart TD
+    main["main()"] -->|parses arguments| organize["organize_directory()"]
+    organize -->|classifies by extension| dest["get_destination_folder()"]
+    organize -->|resolves name collisions| unique["get_unique_destination()"]
+    organize -->|writes stdout and file| log["log()"]
+    organize -->|moves file on disk| shutil["shutil.move()"]
+```
+
 ## Usage
 
 Organize a specific directory:
